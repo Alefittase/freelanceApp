@@ -16,12 +16,15 @@ import lombok.RequiredArgsConstructor;
 @Entity
 @AllArgsConstructor
 @RequiredArgsConstructor
-public class User {
+public class Project {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
-    private String name;
-    private String password;
-    private String email;
-    private String phonenumber;
+    private Employer employer;
+    private Freelancer freelancer;
+    private ProjectState state;
+    private String title;
+    private String descriptionn;
+    private double price;
+    private Skillset requiredSkills;
 }
