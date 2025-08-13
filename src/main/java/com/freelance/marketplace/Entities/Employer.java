@@ -12,6 +12,6 @@ import lombok.RequiredArgsConstructor;
 @Entity
 @AllArgsConstructor
 @RequiredArgsConstructor
-public class Employer {
+public class Employer extends User{
     private String companyName;
 }
