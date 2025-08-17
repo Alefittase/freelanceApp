@@ -19,6 +19,7 @@ import lombok.ToString;
 @Table
 @Entity
 @DiscriminatorValue("0")
+@EqualsAndHashCode(callSuper = true)
 public class Freelancer extends User{
     @ManyToMany(fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.MERGE})
     @JoinTable(
