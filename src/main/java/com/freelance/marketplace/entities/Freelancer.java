@@ -10,22 +10,23 @@ import jakarta.persistence.FetchType;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToMany;
-import jakarta.persistence.Table;
-import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
 import lombok.ToString;
 
-@Data
-@Table
+@Getter
+@Setter
 @Entity
 @DiscriminatorValue("0")
+@ToString(callSuper = true)
 @EqualsAndHashCode(callSuper = true)
-public class Freelancer extends User{
+public class Freelancer extends User {
     @ManyToMany(fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.MERGE})
     @JoinTable(
         name = "freelancer_skills",
-        joinColumns = @JoinColumn(name="freelancer_id"),
-        inverseJoinColumns = @JoinColumn(name="skill_id")
+        joinColumns = @JoinColumn(name = "freelancer_id"),
+        inverseJoinColumns = @JoinColumn(name = "skill_id")
     )
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
