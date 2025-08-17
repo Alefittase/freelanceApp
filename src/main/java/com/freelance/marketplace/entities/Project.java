@@ -40,11 +40,11 @@ public class Project {
     private String title;
 
     @Column(nullable = false, columnDefinition = "TEXT")
-    private String descriptionn;
+    private String description;
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    private ProjectStatus state;
+    private ProjectStatus status;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "employer_id", nullable = false)
