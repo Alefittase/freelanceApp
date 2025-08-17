@@ -5,8 +5,8 @@ import java.util.UUID;
 
 import javax.swing.text.View;
 
-import com.freelance.marketplace.Entities.Project;
-import com.freelance.marketplace.Entities.ProjectState;
+import com.freelance.marketplace.entities.Project;
+import com.freelance.marketplace.entities.ProjectState;
 import com.freelance.marketplace.services.ProjectService;
 
 public class ProjectController {

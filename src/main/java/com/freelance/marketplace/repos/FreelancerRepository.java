@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.EntityGraph;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.freelance.marketplace.Entities.Freelancer;
+import com.freelance.marketplace.entities.Freelancer;
 @Repository
 public interface FreelancerRepository extends JpaRepository<Freelancer, UUID>{
     @EntityGraph(attributePaths = {"skills"})

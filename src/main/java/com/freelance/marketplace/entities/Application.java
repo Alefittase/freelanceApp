@@ -1,4 +1,4 @@
-package com.freelance.marketplace.Entities;
+package com.freelance.marketplace.entities;
 
 import java.util.UUID;
 

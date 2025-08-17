@@ -3,7 +3,7 @@ package com.freelance.marketplace.controllers;
 import java.util.List;
 import java.util.UUID;
 
-import com.freelance.marketplace.Entities.User;
+import com.freelance.marketplace.entities.User;
 import com.freelance.marketplace.services.EmployerService;
 import com.freelance.marketplace.services.FreelancerService;
 

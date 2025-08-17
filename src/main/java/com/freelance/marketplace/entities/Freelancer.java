@@ -1,9 +1,7 @@
-package com.freelance.marketplace.Entities;
+package com.freelance.marketplace.entities;
 
 import java.util.HashSet;
 import java.util.Set;
-
-import org.springframework.context.annotation.Description;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.DiscriminatorValue;
@@ -13,10 +11,8 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.Table;
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import lombok.RequiredArgsConstructor;
 import lombok.ToString;
 
 @Data

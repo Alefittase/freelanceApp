@@ -6,9 +6,9 @@ import java.util.UUID;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.freelance.marketplace.Entities.Employer;
-import com.freelance.marketplace.Entities.Project;
-import com.freelance.marketplace.Entities.Project.ProjectStatus;
+import com.freelance.marketplace.entities.Employer;
+import com.freelance.marketplace.entities.Project;
+import com.freelance.marketplace.entities.Project.ProjectStatus;
 
 @Repository
 public interface ProjectRepository extends JpaRepository<Project, UUID>{
