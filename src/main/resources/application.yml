@@ -2,9 +2,9 @@ spring:
   application:
     name: FreelanceMarketplace
   datasource:
-    url: jdbc:postgresql://localhost:5432/freelance_db
-    username: postgres
-    password: password
+    url: jdbc:postgresql://localhost:5432/mydb
+    username: myuser
+    password: mypassword
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
@@ -16,7 +16,7 @@ spring:
 
 # JWT Configuration
 jwt:
-  secret: "your-base64-encoded-secret" # Generate via: openssl rand -base64 32
+  secret: "uHvBi+hU1eL2n3IhlNKKVyH5SfREdnleiRfcN2AWRa8=" # Generate via: openssl rand -base64 32
   expiration: 86400000 # 24 hours
 
 # Notification email

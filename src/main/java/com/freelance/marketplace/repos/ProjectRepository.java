@@ -13,6 +13,5 @@ import com.freelance.marketplace.entities.Project.ProjectStatus;
 @Repository
 public interface ProjectRepository extends JpaRepository<Project, UUID>{
     List<Project> findByStatus(ProjectStatus status);
-    List<Project> findByState(ProjectStatus state);
     List<Project> findByEmployer(Employer employer);
 }
